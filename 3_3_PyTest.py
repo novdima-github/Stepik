@@ -2,7 +2,7 @@ import unittest
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
+import pytest
 
 class TestAbs(unittest.TestCase):
     def test_test1(self):
@@ -46,11 +46,9 @@ class TestAbs(unittest.TestCase):
             browser.quit()
 
     def test_test2(self):
-
         browser = webdriver.Chrome("f:\Дима\chromedriver.exe")
         link = "http://suninjuly.github.io/registration2.html"
         browser.get(link)
-
         # Ваш код, который заполняет обязательные поля
         input1 = browser.find_element_by_css_selector(
             "input[placeholder='Input your first name']")
@@ -85,6 +83,6 @@ class TestAbs(unittest.TestCase):
         # закрываем браузер после всех манипуляций
         browser.quit()
 
-
+#
 if __name__ == "__main__":
     unittest.main()
