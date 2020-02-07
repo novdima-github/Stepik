@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 class TestAbs(unittest.TestCase):
     def test_test1(self):
         try:
-            browser = webdriver.Chrome("f:\Дима\chromedriver.exe")
+            browser = webdriver.Chrome("d:\Soft\chromedriver.exe")
             link = "http://suninjuly.github.io/registration1.html"
             browser.get(link)
 
